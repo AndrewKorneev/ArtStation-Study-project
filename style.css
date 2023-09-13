@@ -1,0 +1,145 @@
+body {
+  background-color: #18181c;
+  line-height: 125%;
+  color: #e6e6ea;
+  font: normal 1.14rem sans-serif;
+  /*color: #24baff;*/
+}
+
+main {
+  display: grid;
+  grid-template-areas: 
+    "head head head"
+    "side content content2"
+    "foot foot foot";
+    grid-template-columns: 20% 60% 20% ;
+
+}
+
+.headerContent {
+  grid-area: head;
+  display: grid;
+  grid-template-columns: 5% repeat(8, 1fr);
+  grid-column-gap:1%;
+  grid-row-gap: 6%;
+  grid-template-rows: 20% 60% 20%;
+  margin-bottom: 5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+#headerPic {
+  max-width: 3rem;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+.news {
+  height: 88%;
+  grid-column-start: 1;
+  grid-column-end: 11;
+
+}
+.Theme {
+  position: relative;
+  height: 6em;
+  background: url(11.jpg);
+  color:#e6e6ea ;
+  font: sans-serif ;
+  float: left;
+  width: 19%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 1%;
+  margin: 0.5%;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  transform: translateY(-50%);
+
+}
+.Theme:hover {
+  color: #24baff;
+  cursor: pointer;
+}
+
+.mainContent {
+  grid-area: content;
+  background-color: #101014;
+  padding: 0.6rem;
+  border-radius: 14px;
+}
+
+article {
+  background-color: #303034;
+  border-radius: 14px;
+  padding: 0.5rem;
+  margin: 1.12rem;
+}
+
+.asideContent {
+grid-area: side;
+margin: 0rem 3rem;
+background-color: #101014;
+padding: 1.14rem;
+border-radius: 14px;
+
+}
+
+.footerContent {
+  grid-area: foot;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 200px;
+  background-color: #101014;
+  padding: 1%;
+  border-radius: 14px;
+  
+}
+
+.footerContent img {
+  float: left;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 20%;
+  padding: 0.5%;
+}
+
+.footerContent img:hover {
+padding: 0.2%;
+cursor: pointer;
+}
+
+address {
+  margin-top: 40%;
+  
+}
+
+video {
+  border-radius: 14px;
+  width: 60%;
+}
+
+.btn {
+  background:#18181c  ;
+  color:#96969a;
+  border-radius: 15px;
+  border: none;
+  font-family: inherit;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.btn:hover {
+  color:#e6e6ea;
+  text-decoration: underline #24baff ;
+  cursor: pointer;
+}
+
+#search {
+  border-radius: 20px;
+  border: none;
+}
