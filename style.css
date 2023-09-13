@@ -58,8 +58,8 @@ h2 {
   position: relative;
   text-align: center;
   transform: translateY(-50%);
-
 }
+
 .Theme:hover {
   color: #24baff;
   cursor: pointer;
@@ -68,24 +68,24 @@ h2 {
 .mainContent {
   grid-area: content;
   background-color: #101014;
-  padding: 0.6rem;
+  padding: 0.4rem;
   border-radius: 14px;
 }
 
 article {
   background-color: #303034;
   border-radius: 14px;
-  padding: 0.5rem;
+  padding: 0.1rem;
   margin: 1.12rem;
 }
 
 .asideContent {
 grid-area: side;
-margin: 0rem 3rem;
+margin: 0rem 2rem;
 background-color: #101014;
 padding: 1.14rem;
 border-radius: 14px;
-
+max-height: 50%;
 }
 
 .footerContent {
@@ -100,13 +100,17 @@ border-radius: 14px;
   
 }
 
+
 .footerContent img {
   float: left;
   border-radius: 20px;
   box-sizing: border-box;
   width: 20%;
+  overflow: hidden;
   padding: 0.5%;
 }
+
+
 
 .footerContent img:hover {
 padding: 0.2%;
@@ -114,13 +118,22 @@ cursor: pointer;
 }
 
 address {
-  margin-top: 40%;
-  
+position: relative;
+text-align: center;
+top: 60%;  
 }
-
+address a {
+  text-decoration: none;
+  color: #96969a;
+}
+address a:hover {
+  color: #e6e6ea;
+  cursor: pointer;
+}
 video {
   border-radius: 14px;
   width: 60%;
+  
 }
 
 .btn {
@@ -130,7 +143,7 @@ video {
   border: none;
   font-family: inherit;
   font-size: 0.8em;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .btn:hover {
@@ -139,7 +152,57 @@ video {
   cursor: pointer;
 }
 
+#signIn {
+  background: #303034;
+  color: #e6e6ea;
+  font-weight: 600;
+  width: 50%;
+  margin-left: 100%;
+}
+
+#signUp {
+  background: #24baff;
+  color:#18181c;
+  font-weight: 600;
+  width: 50%;
+  margin-left: 50%;
+}
+
+#signIn:hover {
+  background: #424247;
+  text-decoration: none;
+}
+
+#signUp:hover {
+  background: #45c4ff;
+  text-decoration: none;
+}
+
+.SideBtn {
+  background:#18181c  ;
+  color:#e6e6ea;
+  border-radius: 12px;
+  border: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.4rem;
+  margin-left: 0rem;
+}
+
+.SideBtn:hover {
+  color:#24baff;
+  cursor: pointer;
+}
+
 #search {
   border-radius: 20px;
   border: none;
+}
+
+.pageGenre {
+  padding: 0;
+  margin: 0rem 1.12rem;
+  background:#101014;
+  font-size: larger;
 }
