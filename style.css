@@ -51,6 +51,7 @@ main {
   border-radius: 20px;
   padding: 1%;
   margin: 0.5%;
+  transition: 0.5s;
 }
 
 h2 {
@@ -62,19 +63,20 @@ h2 {
 .Theme:hover {
   color: #24baff;
   cursor: pointer;
+  padding: 1.5%;
 }
 
 .mainContent {
   grid-area: content;
   background-color: #101014;
-  padding: 0.4rem;
+  padding: 0.2rem;
   border-radius: 14px;
 }
 
 article {
   background-color: #303034;
   border-radius: 14px;
-  padding: 0.1rem;
+  padding: 0.5rem;
   margin: 1.12rem;
 }
 
@@ -110,6 +112,7 @@ max-height: 50%;
 .footerContent img:hover {
 padding: 0.2%;
 cursor: pointer;
+transition: 0.1s;
 }
 
 address {
@@ -126,6 +129,7 @@ address a {
 address a:hover {
   color: #e6e6ea;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 video {
@@ -147,6 +151,7 @@ video {
   color:#e6e6ea;
   text-decoration: underline #24baff ;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 #signIn {
@@ -155,6 +160,7 @@ video {
   font-weight: 600;
   width: 50%;
   margin-left: 100%;
+  transition: 0.5s;
 }
 
 #signUp {
@@ -163,6 +169,7 @@ video {
   font-weight: 600;
   width: 50%;
   margin-left: 50%;
+  transition: 0.5s;
 }
 
 #signIn:hover {
@@ -185,6 +192,7 @@ video {
   font-weight: 400;
   margin: 0.4rem;
   margin-left: 0rem;
+  transition: 0.5s;
 }
 
 .SideBtn:hover {
@@ -202,4 +210,31 @@ video {
   margin: 0rem 1.12rem;
   background:#101014;
   font-size: larger;
+}
+
+.genreMenu {
+  background: #303034;
+  color:#e6e6ea;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.2s;
+  display: inline-block;
+  position: relative;
+  
+}
+
+.genreMenu:hover {
+  background: #424247;
+  cursor: pointer;
+}
+
+.subMenu {
+  background: #101014;
+  height: 40rem;
+  width: 17rem;
+  position: absolute;
+  display: none;
 }

@@ -1,5 +1,31 @@
 console.info("JS успешно подключен!");
 
+document.getElementsByClassName("headerContent").onclick = function(event) {
+  var target = event.target;
+  if (target.className == "genreMenu") {
+    var s = target.getElementByClassName ("subMenu");
+    closeMenu();
+    s[0].style.display = "block";
+  }
+}
+
+document.onclick = function (event) {
+  var target = event.target;
+  console.log (event.target);
+  if (target.className != "genreMenu" && target.className != "subMenu") {
+    closeMenu();
+  } 
+}
+
+function closeMenu() {
+  var menu = document.getElementsByClassName ("headerContent");
+  var subm = document.getElementsByClassName("subMenu");
+  for (var i=0; i<subm.length; i++) {
+    subm[i].style.display = "none";
+  }
+}
+
+
 /*
 function sum (arr) {
 var res = 0;
