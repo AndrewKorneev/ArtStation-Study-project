@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE-Edge">	  
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">	
+  <meta name = "author" content="Андрей Корнеев">
+  <meta name="description" content="Этот сайт предназначен для 
+    изучения базового стека технологий верстки и веб разработки, 
+    а так же для демонстрации моих навыков. Кря!" >
   <title>Frontend Study Book</title>
 	<link href = "style.css" rel="stylesheet" />
 	<link rel="shortcut icon" href="2.jpg" type="image/x-icon"> 
@@ -16,12 +20,12 @@
       <button class="btn" onclick= "alert ('В процессе производства!');" >Explore</button> 
       <button class="btn" onclick= "alert ('В процессе производства!');" >Shop</button> 
       <button class="btn" onclick= "alert ('В процессе производства!');" >Upload</button> 
-      <input id = "search"> </input>
-      <button class="btn" onclick= "alert ('В процессе производства!');" >Cart </button> 
+      <input class =  "search"> </input>
+      <button class="btn"  id = "cart" onclick= "alert ('В процессе производства!');" >Cart </button> 
       <button class="btn" id="signIn" onclick= "alert ('В процессе производства!');" >Sign in</button> 
       <button class="btn"  id="signUp" onclick= "alert ('В процессе производства!');" > Sign up</button> 
       <button class="btn" onclick= "alert ('В процессе производства!');" >More</button> 
-      <div class="news" > 
+      <div class="news">
         <div class="Theme"><h2>Some cool news</h2></div>
         <div class="Theme"><h2>September Challenges!</h2> </div>
         <div class="Theme"><h2>New technology..</h2> </div>
@@ -29,9 +33,15 @@
         <div class="Theme"><h2>The machine war is coming</h2></div>
       </div>
 
-      <button class="genreMenu">Genres
-      </button>
-      <div class="subMenu"> Подменю </div>
+      <button class="genreMenu" (this)> Genres </button>
+      <div class="subMenu"> 
+        <div class="subBtn"></div>
+        <div class="subBtn"></div>
+        <div class="subBtn"></div>
+        <div class="subBtn"></div>
+        <div class="subBtn"></div>
+        <div class="subBtn"></div>
+      </div>
       <button class="btn" onclick= "alert ('В процессе производства!');" >All genres</button>
       <button class="btn" onclick= "alert ('В процессе производства!');" >Baldur's gate 3 art</button>
       <button class="btn" onclick= "alert ('В процессе производства!');" >The witcher 3 art</button>
@@ -42,30 +52,34 @@
 			<button class="btn" onclick= "alert ('В процессе производства!');" >Character Animation</button>
     </header>
     <aside class = "asideContent">
-      <h3><p>Channels: <p>Classic 2d Art, Ps, Ae, Autodesk Maya, 3dMax, Substance painter.</h3>
-      <div><button class="SideBtn"> + Watch</button></div>
-      <div></div><button class="SideBtn"> + Add to Wishlist</button></div>
-    </aside>
-    <section class = "mainContent"> 
-      <article class="pageGenre">
-        <h1 >Enviroment Concept art & Design</h1>
-      </article>
+      <div class="asideWrap"> 
+        <h3><p>Channels: <p>Classic 2d Art, Ps, Ae, Autodesk Maya, 3dMax, Substance painter.</h3>
+        <div>
+          <button class="SideBtn"> + Watch</button>
+        <div>
+          <button class="SideBtn"> + Add to Wishlist</button>
+        </div>
+      </div>
       
+    </aside>
+    <section class = "sectionContent"> 
+        <h1 >Enviroment Concept art & Design</h1>
 				<article> 
         	<blockquote>
         		Environment concept art is a type of visual art and design. Concept artists use their skills to visualize ideas for the environment than the production team needs in the game or movie they are working on. The environment can be anything from an abandoned space station, an island in the ocean, a medieval castle, etc.
         	</blockquote>
       		<video controls> 
-          	<source src="1.mov">
+            <source src="1.mov">
             	Упс, что - то пошло не так!
-        	</video>
-        	<p>Blender - Анимация</p>
+          </video>
+          <div class="captions"><p>Blender - Анимация</p></div>
+        	
         	<audio src="1.m4a" controls> </audio>
-          <p>Toe - Sonny boy ost</p>
+          <div class="captions"><p>Toe - sonny boy ost </p></div>
       	</article>
 			
     </section>
-  	<footer onclick= "alert ('разобраться, как упорядочить картинки как в пинтересте');" class = "footerContent">
+  	<footer  class = "footerContent" onclick= "alert ('разобраться, как упорядочить картинки как в пинтересте');" >
       <img src = "3.png" />
       <img src = "1.jpg" /> 
       <img src = "5.jpg" /> 
@@ -74,9 +88,8 @@
       <img src = "8.jpg" /> 
       <img src = "9.jpg" /> 
       <img src = "10.jpg"/> 
-      <img src = "11.jpg"/> 
-      <img src = "12.jpg" /> 
-      <img src = "13.jpg" /> 
+      
+
       <address>
         <a href="https://vk.com/bakapaco" 
         title="Перейти на страницу" 
